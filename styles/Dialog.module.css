@@ -1,0 +1,52 @@
+
+  
+  .dialog_animation {
+    position: relative;
+    width: max-content;
+    color: white;
+    display: inline-block;
+  }
+  
+  .dialog_animation::before,
+  .dialog_animation::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .dialog_animation::before {
+    background: black;
+    animation: typewriter 1.5s
+      steps(24) 0.01s forwards;
+  }
+  
+  .dialog_animation::after {
+    width: 0.125em;
+    background: white;
+    animation: typewriter 1.5s
+        steps(24) 0.01s forwards,
+      blink 550ms steps(24) infinite;
+  }
+  
+
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

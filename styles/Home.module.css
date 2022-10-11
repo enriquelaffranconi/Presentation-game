@@ -1,0 +1,33 @@
+.container {
+  display: block;
+  max-width: 2160px;
+  max-height: 3840px;
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+  top:45%;
+}
+
+.main {
+  width: 100%;
+}
+
+.dialog {
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  bottom: 0px;
+  font-size: 2vw;
+  line-height: 200%;
+  text-align: center;
+  background-color: black;
+  font-family: VT323;
+}
+
+.character {
+  position: absolute;
+  right: 4%;
+  bottom: 17%;
+  width: 25%;
+  aspect-ratio: 1/1;
+}
